@@ -1,4 +1,3 @@
-require './lib/bootstrap/asset_compiler'
 require 'rack/coffee_compiler'
 require 'erb'
 
@@ -18,10 +17,7 @@ module Jasmine
       config = self
       app = Rack::Builder.new do
         use Rack::CoffeeCompiler, :source_dir => File.join(File.dirname(__FILE__), '../../../spec/javascripts'), :url => config.spec_path
-
-        map '/app/js' do
-          run Bootstrap::AssetCompiler.new
-        end
+        use Rack::CoffeeCompiler, :source_dir => File.join(File.dirname(__FILE__), '../../../app/js/app'), :url => '/app/js/app'
 
         map '/' do
           run Jasmine.app(config)
