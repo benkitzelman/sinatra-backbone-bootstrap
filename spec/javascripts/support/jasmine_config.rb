@@ -2,28 +2,6 @@ require './lib/bootstrap/asset_compiler'
 require 'rack/coffee_compiler'
 require 'erb'
 
-# monkey patched to be able to modify the jasmine html template if desired
-module Jasmine
-  class RunAdapter
-    def run(focused_suite = nil)
-      jasmine_files = @jasmine_files
-      css_files = @jasmine_stylesheets + (@config.css_files || [])
-      js_files  = @config.js_files(focused_suite)
-      body      = ERB.new(template_file).result(binding)
-      [
-        200,
-        { 'Content-Type' => 'text/html', 'Cache-Control' => 'no-cache', 'Pragma' => 'no-cache' },
-        [body]
-      ]
-    end
-
-    def template_file
-      File.read(File.join(File.dirname(__FILE__), "jasmine.html.erb"))
-    end
-  end
-end
-
-
 # based on https://github.com/jbaudanza/rack-asset-compiler/blob/master/examples/jasmine_config.rb
 module Jasmine
   class Config
