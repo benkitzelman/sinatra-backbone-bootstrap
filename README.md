@@ -21,8 +21,10 @@ _CSS FRAMEWORK_
 
 GETTING STARTED
 -------------------
+<pre>
 bundle
 thin start
+</pre>
 
 JS TESTING WITH JASMINE
 ------------------------
