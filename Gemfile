@@ -12,7 +12,5 @@ gem 'uglifier'
 group :development, :test do
   gem 'jasmine'
   gem 'thin'
-  gem 'capistrano'
-  gem 'capistrano_colors'
   gem 'rack-asset-compiler'
 end
