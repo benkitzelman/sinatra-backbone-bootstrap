@@ -13,8 +13,7 @@ module Bootstrap
 
       js :application, '/js/application.js', [
         '/js/vendor/*.js',
-        '/js/**/*.js',
-        '/js/**/*.coffee'
+        '/js/**/*.js'
       ]
 
       css :application, '/css/application.css', [
