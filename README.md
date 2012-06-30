@@ -19,11 +19,14 @@ _JS LIBS_
 _CSS FRAMEWORK_
  - Skeleton 1.1
 
-**GETTING STARTED**
+GETTING STARTED
+-------------------
 bundle
 thin start
 
-**JS TESTING WITH JASMINE**
+JS TESTING WITH JASMINE
+------------------------
+
 rake jasmine - point the browser to http://localhost:8888/
 
 sinonjs has been included for mocking / stubbing / spying as well as jasmine-jquery.
