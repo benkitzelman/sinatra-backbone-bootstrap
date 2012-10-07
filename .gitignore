@@ -8,3 +8,4 @@ rdoc
 spec/reports
 tmp
 .DS_Store
+.sass-cache
