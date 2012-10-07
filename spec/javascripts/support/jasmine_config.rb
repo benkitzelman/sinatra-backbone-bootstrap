@@ -17,7 +17,7 @@ module Jasmine
       config = self
       app = Rack::Builder.new do
         use Rack::CoffeeCompiler, :source_dir => File.join(File.dirname(__FILE__), '../../../spec/javascripts'), :url => config.spec_path
-        use Rack::CoffeeCompiler, :source_dir => File.join(File.dirname(__FILE__), '../../../app/js/app'), :url => '/app/js/app'
+        use Rack::CoffeeCompiler, :source_dir => File.join(File.dirname(__FILE__), '../../../assets/javascripts/app'), :url => '/assets/javascripts/app'
 
         map '/' do
           run Jasmine.app(config)

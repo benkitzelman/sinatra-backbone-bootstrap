@@ -12,12 +12,12 @@
 #
 src_files:
   # vendor files
-  - app/js/vendor/*.js
-  - app/js/vendor/*.coffee
+  - assets/javascripts/vendor/*.js
+  - assets/javascripts/vendor/*.coffee
   - spec/javascripts/support/vendor/**/*.js
   # app files
-  - app/js/app/**/*.js
-  - app/js/app/**/*.coffee
+  - assets/javascripts/app/**/*.js
+  - assets/javascripts/app/**/*.coffee
 
 
 # stylesheets

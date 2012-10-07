@@ -1,0 +1,20 @@
+@import 'assets/stylesheets/base';
+
+
+// Common Helper css
+// -------------
+.clearfix { @include clearfix(); }
+.hide-text { @include hide-text(); }
+.input-block-level { @include input-block-level(); }
+
+
+body {
+  font-family:  'arial', 'verdana';
+  font-size:    12px;
+  color:        $color-regular-text;
+
+  h1 {
+    font-family: 'Tahoma', 'arial', 'verdana';
+    color:        $color-regular-heading;
+  }
+}
