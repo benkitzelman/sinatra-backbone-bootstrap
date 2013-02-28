@@ -12,7 +12,7 @@ _GEMS_
 
 _JS LIBS_
  - Modernizr 2.5.3
- - BackboneJS 0.9.2
+ - BackboneJS 0.9.10
  - UnderscoreJS 1.3.3
  - JQuery 1.7.2
 
