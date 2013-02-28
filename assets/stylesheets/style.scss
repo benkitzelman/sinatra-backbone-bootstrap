@@ -17,4 +17,22 @@ body {
     font-family: 'Tahoma', 'arial', 'verdana';
     color:        $color-regular-heading;
   }
+
+  .simple-view {
+    position: relative;
+    width:    480px;
+    margin:   50px auto;
+    overflow: hidden;
+
+    img {
+      float: left;
+      margin-right: 30px;
+    }
+
+    p {
+      margin:     0 5px;
+      font-size:  16px;
+      display:    inline-block;
+    }
+  }
 }

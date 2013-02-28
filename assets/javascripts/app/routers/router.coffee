@@ -4,4 +4,4 @@ class App.Router extends Backbone.Router
     '': 'home'
 
   home: ->
-    console.log 'loading home route'
+    $('#app').html (new App.View).render().el

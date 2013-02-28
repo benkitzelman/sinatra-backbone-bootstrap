@@ -16,6 +16,7 @@ module Bootstrap
       assets {
         serve '/javascripts', from: '../../assets/javascripts'
         serve '/stylesheets', from: '../../assets/stylesheets'
+        serve '/images',      from: '../../assets/images'
 
         js :application, '/javascripts/application.js', [
           '/javascripts/vendor/*.js',
