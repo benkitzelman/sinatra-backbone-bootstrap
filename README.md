@@ -13,14 +13,15 @@ _GEMS_
 _JS LIBS_
  - Modernizr 2.5.3
  - BackboneJS 0.9.10
- - UnderscoreJS 1.3.3
- - JQuery 1.7.2
+ - UnderscoreJS 1.4.4
+ - JQuery 1.9.1
 
 _CSS FRAMEWORK_
  - Skeleton 1.1
 
 GETTING STARTED
 -------------------
+
 <pre>
 bundle
 thin start
