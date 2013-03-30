@@ -4,7 +4,7 @@ All the goodness of Backbone, Sinatra, Coffeescript with Jasmine and a lightweig
 
 _GEMS_
  - Sinatra
- - Sinatra-assetpack
+ - Sinatra-asset-snack
  - Coffee-Script
  - SASS
  - Jasmine
@@ -34,5 +34,5 @@ rake jasmine - point the browser to http://localhost:8888/
 
 sinonjs has been included for mocking / stubbing / spying as well as jasmine-jquery.
 
-Sinatra Assetpack handles coffeescript compilation on the fly, and in production, takes care of minification / uglification of js and coffeescript into 2 discrete files - vendor.js and application.js
+Sinatra AssetSnack handles Coffeescript and SASS compilation on the fly
 
