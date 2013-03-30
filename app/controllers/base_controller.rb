@@ -1,5 +1,5 @@
 require 'sinatra/base'
-require 'sinatra/assetpack'
+require 'sinatra/asset_snack'
 
 module Bootstrap
   class BaseController < Sinatra::Base
@@ -11,26 +11,11 @@ module Bootstrap
     def self.mount_assets
       set :sass,{ :load_paths => [ Bootstrap.root + "assets/stylesheets" ] }
 
-      register Sinatra::AssetPack
+      register Sinatra::AssetSnack
+      asset_map '/javascripts/vendor.js', ['assets/javascripts/vendor/**/*.js', 'assets/javascripts/vendor/**/*.coffee']
+      asset_map '/javascripts/application.js', ['assets/javascripts/app/**/*.js', 'assets/javascripts/app/**/*.coffee']
+      asset_map '/stylesheets/application.css', ['assets/stylesheets/**/*.css', 'assets/stylesheets/**/*.scss']
 
-      assets {
-        serve '/javascripts', from: '../../assets/javascripts'
-        serve '/stylesheets', from: '../../assets/stylesheets'
-        serve '/images',      from: '../../assets/images'
-
-        js :application, '/javascripts/application.js', [
-          '/javascripts/vendor/*.js',
-          '/javascripts/app/*.js'
-        ]
-
-        css :application, '/stylesheets/application.css', [
-          '/stylesheets/skeleton/*.css',
-          '/stylesheets/*.css'
-        ]
-
-        js_compression  :uglify
-        css_compression :sass
-      }
     end
   end
 end

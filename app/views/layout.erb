@@ -19,14 +19,16 @@
 
   <!-- CSS
   ================================================== -->
-  <%= css :application %>
+  <link href='/stylesheets/application.css' rel='stylesheet'></link>
 </head>
 <body>
   <%= yield %>
 
   <!-- JS
   ================================================== -->
-  <%= js :application %>
+  <script src='/javascripts/vendor.js' type='text/javascript'></script>
+  <script src='/javascripts/application.js' type='text/javascript'></script>
+
   <!-- End Document
   ================================================== -->
 </body>
