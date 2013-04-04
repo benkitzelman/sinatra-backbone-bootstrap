@@ -8,7 +8,6 @@ gem 'emk-sinatra-url-for'
 gem 'therubyracer'
 gem 'coffee-script'
 gem 'sass'
-gem 'uglifier'
 
 group :development, :test do
   gem 'jasmine'
