@@ -1,5 +1,8 @@
 sinatra-backbone-bootstrap
 ==========================
+
+[![endorse](https://api.coderwall.com/benkitzelman/endorsecount.png)](https://coderwall.com/benkitzelman)
+
 All the goodness of Backbone, Sinatra, Coffeescript with Jasmine and a lightweight responsive css framework (Skeleton).
 
 _GEMS_
