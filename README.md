@@ -39,3 +39,7 @@ sinonjs has been included for mocking / stubbing / spying as well as jasmine-jqu
 
 Sinatra AssetSnack handles Coffeescript and SASS compilation on the fly
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/benkitzelman/sinatra-backbone-bootstrap/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
